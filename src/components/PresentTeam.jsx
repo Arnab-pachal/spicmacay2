@@ -22,16 +22,18 @@ const PresentTeam = () => {
       <div className="text-sm my-4 font-medium text-center text-gray-500 dark:text-gray-400 ">
         <ul className="flex flex-wrap -mb-px">
           <li className="mr-2">
-            <p onClick={()=>{setYear({passout24:1,final:0,prefinal:0,second:0})}} aria-current="page" href="#" className={`inline-block cursor-pointer p-4  border-b-2 border-transparent rounded-t-lg ${!year.passout24 && "hover:text-gray-500 hover:border-gray-500 dark:hover:text-gray-300 "} ${year.passout24 && "text-red-500 border-red-600 dark:text-blue-500 dark:border-red-500 font-bold"}`}>'24 Passout</p>
+            <p onClick={()=>{setYear({passout24:1,final:0,prefinal:0,second:0})}} aria-current="page" 
+            href="#" 
+            className={`inline-block cursor-pointer p-4  border-b-2  rounded-t-lg ${!year.passout24 && " hover:text-gray-500 hover:border-gray-500 dark:hover:text-gray-300 border-transparent "} ${year.passout24 && "text-red-500 border-red-600 dark:text-blue-500 dark:border-red-500 font-bold "}`}>24' Passout</p>
           </li>
           <li className="mr-2">
-            <p onClick={()=>{setYear({passout24:0,final:1,prefinal:0,second:0})}} aria-current="page" href="#" className={`inline-block cursor-pointer p-4 border-b-2 border-transparent rounded-t-lg ${!year.final && "hover:text-gray-500 hover:border-gray-500 dark:hover:text-gray-300"} ${year.final && "text-red-500 border-red-600 dark:text-blue-500 dark:border-red-500"}`}>Final Years</p>
+            <p onClick={()=>{setYear({passout24:0,final:1,prefinal:0,second:0})}} aria-current="page" href="#" className={`inline-block cursor-pointer p-4 border-b-2  rounded-t-lg ${!year.final && "hover:text-gray-500 hover:border-gray-500 dark:hover:text-gray-300 border-transparent"} ${year.final && "text-red-500 border-red-600 dark:text-blue-500 dark:border-red-500 font-bold"}`}>Final Years</p>
           </li>
           <li className="mr-2">
-            <p onClick={()=>{setYear({passout24:0,final:0,prefinal:1,second:0})}} className={`inline-block cursor-pointer p-4 border-b-2 border-transparent rounded-t-lg ${!year.prefinal && "hover:text-gray-600 hover:border-gray-500 dark:hover:text-gray-300"} ${year.prefinal && "text-red-500 border-red-600 dark:text-blue-500 dark:border-blue-500"}`}>Pre-Final Years</p>
+            <p onClick={()=>{setYear({passout24:0,final:0,prefinal:1,second:0})}} className={`inline-block cursor-pointer p-4 border-b-2  rounded-t-lg ${!year.prefinal && "hover:text-gray-600 hover:border-gray-500 dark:hover:text-gray-300 border-transparent"} ${year.prefinal && "text-red-500 border-red-600 dark:text-blue-500 dark:border-blue-500 font-bold "}`}>Pre-Final Years</p>
           </li>
           <li className="mr-2">
-            <p onClick={()=>{setYear({passout24:0,final:0,prefinal:0,second:1})}} className={`inline-block cursor-pointer p-4 border-b-2 border-transparent rounded-t-lg ${!year.second && "hover:text-gray-600 hover:border-gray-500 dark:hover:text-gray-300"} ${year.second && "text-red-500 border-red-600 dark:text-blue-500 dark:border-blue-500"}`}>Second Years</p>
+            <p onClick={()=>{setYear({passout24:0,final:0,prefinal:0,second:1})}} className={`inline-block cursor-pointer p-4 border-b-2 rounded-t-lg ${!year.second && "hover:text-gray-600 hover:border-gray-500 dark:hover:text-gray-300 border-transparent"} ${year.second && "text-red-500 border-red-600 dark:text-blue-500 dark:border-blue-500 font-bold"}`}>Second Years</p>
           </li>
         </ul>
       </div>

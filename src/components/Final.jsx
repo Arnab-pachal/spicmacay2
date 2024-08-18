@@ -35,7 +35,7 @@ function Final() {
       <TeamImg year='2021' src='Porag' name="Mohaimenul Hok Porag" post={"Music wing"}  />
       <TeamImg year='2021' src='Soumyajit1' name="Soumyajit Majumdar" post={"Music wing"}  />
       <TeamImg year='2021' src='Subhabrata' name="Subhabrata Das" post={"IT wing"}  />
-      <TeamImg year='2021' src='Souharda' name="Souharda Shankar" post={"Music wing"}  />
+   
       <TeamImg year='2021' src='Meghna' name="Meghna Bhattacharya" post={"Content wing"} />
 
 

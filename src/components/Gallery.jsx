@@ -7,8 +7,8 @@ const Gallery = () => {
       <section className="text-gray-600 body-font">
         <div className="container px-2 py-16 mx-auto ">
           <div className="flex flex-col items-center justify-center w-full mb-20 flex-wrap">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Journey through some auspicious moments captured in lenses</h1>
-            <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Embark on a visual journey through our captivating photo gallery. Each snapshot tells a unique story, inviting you to discover the artistry in every image. Welcome to a world where moments come to life through the lens.</p>
+            <h1 className="sm:text-3xl text-2xl font-medium title-font text-red-500 mb-4 font-bold">Journey through some auspicious moments captured in lenses</h1>
+            <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-blue-600 font-semibold text-base">Embark on a visual journey through our captivating photo gallery. Each snapshot tells a unique story, inviting you to discover the artistry in every image. Welcome to a world where moments come to life through the lens.</p>
           </div>
           <div className='picture-layout grid'>
             <GalleryImg src="24" />
@@ -20,6 +20,16 @@ const Gallery = () => {
             <GalleryImg src="29" />
             <GalleryImg src="25" />
             <GalleryImg src="15" />
+            <GalleryImg src="ustadsahid"/>
+            <GalleryImg src="USTADSAHID2"/>
+            <GalleryImg src="artwork1"/>
+            <GalleryImg src="artwork2"/>
+            <GalleryImg src="artwork3"/>
+            <GalleryImg src="artwork4"/>
+            <GalleryImg src="dance1"/>
+            <GalleryImg src="dance2"/>
+            <GalleryImg src="harmonium"/>
+            <GalleryImg src="portait"/>
           </div>
         </div>
       </section>
