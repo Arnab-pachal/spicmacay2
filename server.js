@@ -32,6 +32,8 @@ app.listen(3001, () => {
 });
 
 app.use("/uploads", express.static("uploads"));
+const path = require('path');
+const uploadPath = path.join(__dirname, 'uploads');
 
 app.get("/", async (req, res) => {
    try{ const alldata = await Mongo.find({});
@@ -84,9 +86,9 @@ app.delete("/deletevid", async (req, res) => {
 });
 
 
-// Configure multer
+
 const storage = multer.diskStorage({
-    destination: (req, file, cb) => cb(null, 'uploads/'),
+    destination: (req, file, cb) => cb(null, uploadPath),
     filename: (req, file, cb) => cb(null, Date.now() + '-' + file.originalname),
 });
 
