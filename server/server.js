@@ -11,8 +11,8 @@ require('dotenv').config();
 const app = express();
 const cors = require("cors");
 app.use(cors({
-    origin: "http://localhost:3000", // Frontend origin
-    methods: ["GET", "POST", "DELETE"], // Allowed methods
+    origin: "http://localhost:3000", 
+    methods: ["GET", "POST", "DELETE"], 
 }));
 cloudinary.config({
     cloud_name: process.env.CLOUD_NAME,
