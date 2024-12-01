@@ -8,6 +8,7 @@ import PresentTeam from './components/PresentTeam';
 import Home from './components/Landing';
 import Contact from './components/Contact';
 import useColorScheme from './components/useColorScheme'
+import Video from './components/video';
 
 function App() {
   const dark = useColorScheme('dark')
@@ -20,6 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path='/video' element={<Video/>}/>
             <Route path="/events" element={<Events />} />
             <Route path="/team" element={<PresentTeam />} />
             <Route path="/contact" element={<Contact />} />

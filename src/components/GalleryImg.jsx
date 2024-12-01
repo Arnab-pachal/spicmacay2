@@ -15,7 +15,7 @@ import React from 'react';
 function GalleryImg(props) {
     const img = require(`./images/${props.src}.jpg`);
     return (
-        <div className="md:p-3 p-1">
+        <div className="md:p-3 p-1" style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
             <img
                 alt="gallery"
                 className="w-full object-cover"
@@ -25,7 +25,10 @@ function GalleryImg(props) {
                      borderRadius:"15px",
                      height: '400px' }} // Adjust this value as needed
             />
-        </div>
+            <form action='/delete'style={{margin:"10px"}}>
+            <button type="button" class="btn btn-outline-danger">Delete</button>
+            </form>
+            </div>
     );
 }
 

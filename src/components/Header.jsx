@@ -14,6 +14,7 @@ const Header = ({dark}) => {
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-red-900 	flex flex-wrap items-center text-base justify-center">
           <Link to={'/'} className={`mr-5 ${location.pathname==='/'?"border-b-2 border-red-500":""} dark:hover:text-blue-500 hover:text-red-500 `}>Home</Link>
           <Link to={'/gallery'} className={`mr-5 ${location.pathname==='/gallery'?"border-b-2 border-red-500":""} dark:hover:text-blue-500 hover:text-red-500`}>Gallery</Link>
+          <Link to={'/video'} className={`mr-5 ${location.pathname==='/video'?"border-b-2 border-red-500":""} dark:hover:text-blue-500 hover:text-red-500`}>VideoGallery</Link>
           <Link to={'/team'} className={`mr-5 ${location.pathname==='/team'?"border-b-2 border-red-500":""} dark:hover:text-blue-500 hover:text-red-500`}>Team</Link>
           <Link to={'/events'} className={`mr-5 ${location.pathname==='/events'?"border-b-2 border-red-500":""} dark:hover:text-blue-500 hover:text-red-500`}>Events</Link>
           <a href={'https://virasat-eta.vercel.app/'} className={`mr-5 dark:hover:text-blue-500 hover:text-gray-900 border-red-500`}>Virasat</a>
