@@ -10,8 +10,9 @@ require('dotenv').config();
 const app = express();
 const cors = require("cors");
 app.use(cors({
-    origin: "https://spicmacaynitdurgapur.vercel.app/", 
-    methods: ["GET", "POST", "DELETE"], 
+    origin: ["https://spicmacaynitdurgapur.vercel.app/"], 
+    methods: ["GET", "POST", "DELETE"],
+    credentials:true 
 }));
 cloudinary.config({
     cloud_name: process.env.CLOUD_NAME,
@@ -40,6 +41,7 @@ app.get("/", async (req, res) => {
             res.status(500).json({ message: 'Error fetching photos' });
       
     }
+    
 }
 );
 app.get("/getvideo",async(req,res)=>{
