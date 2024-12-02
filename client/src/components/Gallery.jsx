@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-
 const Gallery = () => {
   const [file, setFile] = useState(null);
   const [preview, setPreview] = useState(null);
