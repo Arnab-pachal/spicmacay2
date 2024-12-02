@@ -5,13 +5,12 @@ const cloudinary = require('cloudinary').v2;
 const Mongo = require("./schema");
 const methodOverride = require("method-override");
 const vidMongo = require("./vidschema");
-
 require('dotenv').config();
 
 const app = express();
 const cors = require("cors");
 app.use(cors({
-    origin: "https://spicmacay2-1c3ei1enm-arnab-pachals-projects.vercel.app/", 
+    origin: "  http://localhost:3000", 
     methods: ["GET", "POST", "DELETE"], 
 }));
 cloudinary.config({
@@ -24,8 +23,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(methodOverride("_method"));
 app.set("view engine", "ejs");
-
-
 
 app.listen(3001, () => {
     console.log("app is listening on port 3001");
@@ -116,7 +113,6 @@ app.post('/cloud', upload.single('file'), async (req, res) => {
     res.status(200).json({ message: "File uploaded successfully!"});
 });
 
-//video upload in cloudinary
 app.post('/upload',upload.single('video'),async(req,res)=>{
     console.log(req.file);
     try{
