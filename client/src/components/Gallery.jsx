@@ -25,7 +25,7 @@ const Gallery = () => {
     formData.append('file', file);
 
     try {
-      const response = await axios.post('http://localhost:3001/cloud', formData, {
+      const response = await axios.post('https://backend-tne7.vercel.app/cloud', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       console.log('File uploaded successfully:', response.data);
@@ -43,7 +43,7 @@ const Gallery = () => {
   useEffect(() => {
     const fetchPhotos = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/');
+        const response = await axios.get('https://backend-tne7.vercel.app/');
         setPhotos(response.data);
       } catch (error) {
         console.error('Error fetching photos:', error);
@@ -56,7 +56,7 @@ const Gallery = () => {
 
     try {
       console.log(id);
-      const response = await axios.delete(`http://localhost:3001/delete?id=${id}`);
+      const response = await axios.delete(`https://backend-tne7.vercel.app/delete?id=${id}`);
     }
     catch (err) {
       console.log("file is not deleted");

@@ -19,7 +19,7 @@ const Video = () => {
   useEffect(()=>{
     const rendervideo =async()=>{
        try{
-           const res = await axios.get("http://localhost:3001/getvideo")
+           const res = await axios.get("https://backend-tne7.vercel.app/getvideo")
            setVid(res.data)
        }
        catch(err){
@@ -42,7 +42,7 @@ const Video = () => {
     formData.append("video", videoFile);
 
     try {
-      const response = await fetch("http://localhost:3001/upload", {
+      const response = await fetch("https://backend-tne7.vercel.app/upload", {
         method: "POST",
         body: formData,
       });
@@ -59,7 +59,7 @@ const Video = () => {
   };
 const handleDelete=async(id)=>{
 console.log("Delete is triggered");
-let result = await axios.delete(`http://localhost:3001/deletevid?id=${id}`);
+let result = await axios.delete(`https://backend-tne7.vercel.app/deletevid?id=${id}`);
 console.log(result.data);
 }
 const style = {
